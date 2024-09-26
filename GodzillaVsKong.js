@@ -22,7 +22,6 @@ function godzilla(budget, actorsCount, singleCostumePrice)
         console.log("Not enough money!");
         console.log(`Wingard needs ${moneyNeeded.toFixed(2)} leva more.`);
     }
-
 }
 
 godzilla(20000, 120, 55.5)
