@@ -1,7 +1,4 @@
-function smallShop(arg1, arg2, arg3) {
-    let product = arg1;
-    let town = arg2;
-    let quantity = Number(arg3);
+function smallShop(product, town, quantity) {
     let result = 0;
 
     switch (town) {
