@@ -5,12 +5,12 @@ function graduation(input) {
     index++;
 
     let sumGrade = 0;
-    let i = 1;
+    let schoolClass = 1;
 
     let hasExcluded = false;
     let badGradeCounter = 0;
 
-    while (i <= 12) {
+    while (schoolClass <= 12) {
         let grade = Number(input[index]);
         index++;
 
@@ -18,14 +18,14 @@ function graduation(input) {
             badGradeCounter++;
             if (badGradeCounter == 2) {
                 hasExcluded = true;
-                console.log(`${name} has been excluded at ${i} grade`);
+                console.log(`${name} has been excluded at ${schoolClass} grade`);
                 break;
             }
             continue;
         }
 
         sumGrade += grade;
-        i++;
+        schoolClass++;
     }
 
     if(!hasExcluded)
